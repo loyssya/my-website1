@@ -1,0 +1,188 @@
+@media  (max-width: 600px) {
+.grid_header{
+        display: grid;
+        width: 100%;
+        grid-template-areas:
+        'logo menu'
+        'search search';
+        justify-content: center;
+    } 
+
+    .image{
+        display: none;
+      } 
+
+      .grid_header ul { 
+          width: 0px !important;
+        height: 0 !important;
+        overflow: hidden;
+    }
+  .menu li a.item {
+    color: #fff;
+
+  }
+
+    .grid_header nav:hover ul
+    /* ,header nav:active ul */ {
+        height: auto !important;
+        width:  100vw !important;
+    }
+
+    .grid_header nav:hover ul
+    /* ,header nav:active ul*/ { 
+        position: absolute;
+        width: 100%;
+        left: 0;
+        background: #C9C9CE;
+        height: calc(100vh - 128px);
+        top: 130px;
+    }
+
+    /* header nav:hover::after, 
+    header nav:active::after {
+        width: 0;
+        height: 0;
+    } */
+
+    .grid_header nav::after {
+        content: "";
+        position: absolute;
+        display: block;
+        height: 100px;
+        width: 100px;
+        background-size: cover;
+        background-image: url(../images/Hamburger_icon.svg);
+        background-repeat: no-repeat;
+        right: 0;
+        top: 30px;
+    }
+    .grid_popular_movies{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .search{
+        width: 100vw;
+    }
+    .search input{
+        width: 60%;
+        height: 50px;
+            }
+    
+    .search form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /* .feedback{
+        display: none;
+    }
+    
+    .quick_menu{
+        display: none; 
+}*/ 
+
+
+    .centre{
+        display: none;
+    }
+
+    .movie_block {
+        width: 100%;
+    }
+
+    .movie_block section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .movie_block section a {
+        padding: 0;
+    }
+
+    .movie_block img {
+        width: 100%;
+        height: auto;
+    }
+    .grid_footer{
+        display: none;
+    }
+    .headerM{
+        width: 100%;
+    }
+    .headerM nav::after {
+        content: "";
+        position: absolute;
+        display: block;
+        height: 100px;
+        width: 100px;
+        background-size: cover;
+        background-image: url(../images/Hamburger_icon.svg);
+        background-repeat: no-repeat;
+        right: 0;
+        top: 30px;
+    }
+    .menuM li{
+        float: none;
+    }
+    .headerM ul { 
+        width: 0px !important;
+      height: 0 !important;
+      overflow: hidden;
+      padding: 0px;
+      background-color: none;
+  }
+
+  .headerM nav:hover ul
+  /* ,header nav:active ul */ {
+      height: auto !important;
+      width:  100vw !important;
+  }
+
+  .headerM nav:hover ul
+  /* ,header nav:active ul*/ { 
+      position: absolute;
+      width: 100%;
+      left: 0;
+      background: #C9C9CE;
+      height: calc(100vh - 128px);
+      top: 130px;
+  }
+  .grid_movieM {
+      grid-template-columns: auto auto;
+      grid-gap: 0px; }
+      .grid_popular_moviesM{
+        grid-template-columns: auto auto;
+        grid-gap:15px;
+      }
+      .images_movieM{
+width: 254px; 
+height: 383px;
+      }
+    .aboutM{
+          width: 100%;
+      } 
+      .videoM {
+    width: 100%;
+}
+.movie_block:nth-child(2) ~ .movie_block{
+display: none;
+}
+.movie_block img{
+    width: 168px;
+    height: 240px;
+}
+ .recomM{
+     width: 100%;
+ }
+ .down_logoM{
+    display: none;
+ }
+.imagesM{
+    display: none;
+}
+.movieM5{
+    display: none;
+}
+  }
+
+  

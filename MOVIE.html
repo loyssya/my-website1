@@ -3,33 +3,42 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>LOOK_MOVIE</title>
+    <link rel="stylesheet" href="style_css/style_movie.css">
+    <link rel="stylesheet" media="(max-width: 600px)" href="style_css/mob.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style_css/star.css">
+
 </head>
 
-<body>
+<body class="grid_body">
     <br>
     <br>
-    <div style="display: flex;">
-        <section style="width:30%; display:inline-block;" align="center">
-            <img width="130" height="60" src="./images/look.png" alt="logo">
+    <header class="headerM">
+        <section >
+            <img width="195" height="90" src="./images/look.png" alt="logo">
         </section>
-        <section style="width:40%; display:inline-block; " align="center">
+        <section class="menuM">
             <nav>
 
-                <h1><a style="color:black" href="./HOME.html">Фильмы</a>
-                    <a style="color:black" href="./TV_SERIES.html">Сериалы</a>
-                    <a style="color:black" href="./CARTOON.html">Мультфильмы</a>
-                    <a style="color:black" href="./ANIMATED_SERIES.html">Мультсериалы</a></h1>
+                <ul>
+                    <li><a class="active" href="./HOME.html">Фильмы</a></li>
+                    <li><a href="./TV_SERIES.html">Сериалы</a></li>
+                    <li><a href="./CARTOON.html">Мультфильмы</a></li>
+                    <li><a href="./ANIMATED_SERIES.html">Мультсериалы </a></li>
+
+                </ul>
 
             </nav>
         </section>
-    </div>
+    </header>
     <br>
-    <div style="display: flex;">
-        <section style="width:30%; display:inline-block;" align="right">
-            <img src="./images/m33c30ddfb881gn13z89a.jpg" alt="cinema">
+    <section class="grid_movieM">
+        <section class=".movieM">
+            <img class="images_movieM"src="./images/m33c30ddfb881gn13z89a.jpg" alt="cinema">
         </section>
-        <section style="width:70%; display:inline;">
+        <article class="movieM4">
             <h2>Бойцовский клуб (1999 г.)</h2>
             <p>Дата выхода: 10 сентября 1999 года </p>
             <p>Страна: США, Германия</p>
@@ -39,40 +48,129 @@
             <p> В переводе: Дубляж и Оригинал</p>
             <p>Возраст: 18+ только для взрослых</p>
             <p>Время: 139 мин.</p>
+        </article>
+    <section class="imagesM">
+       <img width="30" height="30" src="./images/share.svg" alt="share">
+    </section>
+        <section class="movieM5">
+             <i class="fa fa-heart" style="font-size:56px;"></i>
         </section>
-    </div>
-    <h1 align="left">Про фильм:</h1>
-    <p>В основу сюжета картины лег одноименный роман Чака Паланика. Главный герой фильма работает рядовым клерком в
-        одной из крупных корпораций, и ведет очень скучный образ жизни. Единственным развлечением для него является
-        покупка мебели по каталогам. Но однажды все кардинальным образом меняется, после того как герой знакомится с
-        Тайлером Дерденом, человеком очень отличающимся от него, отрицающим устоявшиеся стереотипы. Они начинают
-        общаться, и в скором времени герой принимает философию жизни Тайлера. Однажды парни находят новый способ
-        получать удовольствие, и начинают жестоко драться, независимо от того, где они находятся.</p>
-    <h1 align="left">Смотреть онлайн:</h1>
-    <br>
-    <section align="center">
-        <video src="Бойцовский клуб (1999) — русский трейлер.mp4" width="680" height="360" autoplay controls>
+    </section>
+    <article class="aboutM movieM6">
+        <h1>Про фильм:</h1>
+        <p>В основу сюжета картины лег одноименный роман Чака Паланика. Главный герой фильма работает рядовым клерком в
+            одной из крупных корпораций, и ведет очень скучный образ жизни. Единственным развлечением для него является
+            покупка мебели по каталогам. Но однажды все кардинальным образом меняется, после того как герой знакомится с
+            Тайлером Дерденом, человеком очень отличающимся от него, отрицающим устоявшиеся стереотипы. Они начинают
+            общаться, и в скором времени герой принимает философию жизни Тайлера. Однажды парни находят новый способ
+            получать удовольствие, и начинают жестоко драться, независимо от того, где они находятся.</p>
+        <h1>Смотреть онлайн:</h1>
+    </article>
+
+
+
+    
+    <section class="videoM movieM7">
+        <video src="Бойцовский клуб (1999) — русский трейлер.mp4"  autoplay controls>
         </video>
     </section>
     <br>
-    <h1 align="left">Рекомендуем посмотреть:</h1>
-
-    <section style="width:30%; display:inline-block;" align="center">
-        <img width="140" height="200" src="./images/m33c30ddfb881gn13z89a.jpg" alt="film">
-        <h3>Бойцовский клуб</h3>
-        <h4><a href="./MOVIE.html">Смотреть</a></h4>
-    </section>
-    <section style="width:30%; display:inline-block;" align="center">
-        <img width="140" height="200" src="./images/m33c30ddfb881gn13z89a.jpg" alt="film">
-        <h3>Бойцовский клуб</h3>
-        <h4><a href="./MOVIE.html">Смотреть</a></h4>
-    </section>
-    <section style="width:30%; display:inline-block;" align="center">
-        <img width="140" height="200" src="./images/m33c30ddfb881gn13z89a.jpg" alt="film">
-        <h3>Бойцовский клуб</h3>
-        <h4><a href="./MOVIE.html">Смотреть</a></h4>
-    </section>
-
+    <section class="recomM">
+        <h1>Рекомендуем посмотреть:</h1>
+        <section class="grid_popular_moviesM">
+            <section class="movie_block">
+                <img width="210" height="300" src="./images/m33c30ddfb881gn13z89a.jpg" alt="film">
+                <h3>Бойцовский клуб</h3>
+                <section>
+                    <section class="star">
+                        <input type="radio" id="star-5" name="rating" value="5" disabled>
+                        <label for="star-5" title="Оценка «5»"></label>
+                        <input type="radio" id="star-4" name="rating" value="4" checked disabled>
+                        <label for="star-4" title="Оценка «4»"></label>
+                        <input type="radio" id="star-3" name="rating" value="3" disabled>
+                        <label for="star-3" title="Оценка «3»"></label>
+                        <input type="radio" id="star-2" name="rating" value="2" disabled>
+                        <label for="star-2" title="Оценка «2»"></label>
+                        <input type="radio" id="star-1" name="rating" value="1" disabledf>
+                        <label for="star-1" title="Оценка «1»"></label>
+                    </section>
+                    <span><a href="./MOVIE.html">Смотреть</a></span>
+                </section>
+            </section>
+            <section class="movie_block">
+                <img width="210" height="300" src="./images/m33c30ddfb881gn13z89a.jpg" alt="film">
+                <h3>Бойцовский клуб</h3>
+                <section>
+                    <section class="star">
+                        <input type="radio" id="star-5" name="rating1" value="5" checked disabled>
+                        <label for="star-5" title="Оценка «5»"></label>
+                        <input type="radio" id="star-4-1" name="rating1" value="4" disabled>
+                        <label for="star-4" title="Оценка «4»"></label>
+                        <input type="radio" id="star-3" name="rating1" value="3" disabled>
+                        <label for="star-3" title="Оценка «3»"></label>
+                        <input type="radio" id="star-2" name="rating1" value="2" disabled>
+                        <label for="star-2" title="Оценка «2»"></label>
+                        <input type="radio" id="star-1" name="rating1" value="1" disabled>
+                        <label for="star-1" title="Оценка «1»"></label>
+                    </section>
+                    <span><a href="./MOVIE.html">Смотреть</a></span>
+                </section>
+            </section>
+            <section class="movie_block">
+                <img width="210" height="300" src="./images/m33c30ddfb881gn13z89a.jpg" alt="film">
+                <h3>Бойцовский клуб</h3>
+                <section>
+                    <section class="star">
+                        <input type="radio" id="star-5" name="rating2" value="5" disabled>
+                        <label for="star-5" title="Оценка «5»"></label>
+                        <input type="radio" id="star-4" name="rating2" value="4" disabled>
+                        <label for="star-4" title="Оценка «4»"></label>
+                        <input type="radio" id="star-3" name="rating2" value="3" checked disabled>
+                        <label for="star-3" title="Оценка «3»"></label>
+                        <input type="radio" id="star-2" name="rating2" value="2" disabled>
+                        <label for="star-2" title="Оценка «2»"></label>
+                        <input type="radio" id="star-1" name="rating2" value="1" disabled>
+                        <label for="star-1" title="Оценка «1»"></label>
+                    </section>
+                    <span><a href="./MOVIE.html">Смотреть</a></span>
+                </section>
+            </section>
+            <section class="movie_block">
+                <img width="210" height="300" src="./images/m33c30ddfb881gn13z89a.jpg" alt="film">
+                <h3>Бойцовский клуб</h3>
+                <section>
+                    <section class="star">
+                        <input type="radio" id="star-5" name="rating3" value="5" disabled>
+                        <label for="star-5" title="Оценка «5»"></label>
+                        <input type="radio" id="star-4" name="rating3" value="4" disabled>
+                        <label for="star-4" title="Оценка «4»"></label>
+                        <input type="radio" id="star-3" name="rating3" value="3" checked disabled>
+                        <label for="star-3" title="Оценка «3»"></label>
+                        <input type="radio" id="star-2" name="rating3" value="2" disabled>
+                        <label for="star-2" title="Оценка «2»"></label>
+                        <input type="radio" id="star-1" name="rating3" value="1" disabled>
+                        <label for="star-1" title="Оценка «1»"></label>
+                    </section>
+                    <span><a href="./MOVIE.html">Смотреть</a></span>
+                </section>
+            </section>
+            
+        </section>
+        <footer class="down_logoM">
+        <section>
+            <img width="130" height="65" src="./images/look.png" alt="logo">
+        </section>
+            <section class="quick_menuM">
+            <nav>
+                <ul>
+                    <li><a style="color:black" href="./ABOUT_US.html">О нас</a></li>
+                    <li><a style="color:black" href="./HELP.html">Помощь</a></li>
+                    <li><a style="color:black" href="./FAVORITES.html">Избранное</a></li>
+                </ul>
+            </nav>
+        </section>
+        
+    </footer>
 </body>
 
 </html>

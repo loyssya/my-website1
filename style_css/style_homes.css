@@ -1,0 +1,257 @@
+
+.logo { grid-area:logo; }
+.search { grid-area:search; }
+.menu { grid-area:menu; }
+.image { grid-area:image; } 
+
+.grid_header{
+    display: grid;
+    grid-template-areas:
+      'logo search search'
+      'menu menu image ';
+    justify-content: center;
+
+}
+
+
+.search{
+    background: #C9C9CE;
+    padding: 15px 5px
+    
+
+}
+
+
+.search input {
+  
+  width: 750px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  
+  
+}
+.search button{
+    width: 120px;
+    height: 50px;
+    border: none;
+    background:#C9C9CE;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: Verdana;
+    font-weight: bold;
+    
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    position: relative;   
+    width: 410px;
+    height: 100%;
+    background-color:#ffffff;
+    text-align:center
+}
+
+.menu li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    padding: 20px 30px;
+    text-decoration: none;
+    font-size:25px;
+}
+
+.menu li a:hover {
+    background-color: rgb(230,230,230);
+    color: white;
+}
+
+article{
+    text-align: center;
+    font-family: Helvetica;
+    font-size:30px;
+    color:rgb(77,77,77);
+}
+.movie_block{
+    width:250px;
+    display:inline-block;
+    padding: 5px 5px;
+    
+}
+
+
+
+.grid_popular_movies a{
+    color:rgb(3,122,255);
+    font-size:15px;
+    font-weight: bold;
+    padding: 15px;
+    
+}
+
+
+
+
+
+    .feedback{
+    /* display: flex; */
+    /* justify-content:center; */
+    color:black; 
+    font-family:Helvetica;
+    font-size:18px;         
+}
+/* .feedback section{
+    padding: 0px 50px; 
+} */
+/* .quick_menu{
+    display: flex;
+    justify-content: center; 
+    
+}*/
+a{
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+
+    overflow: hidden;
+
+    width: 800px;
+    height: 100%;
+    text-align:center
+}
+
+ .quick_menu li {
+    float: left;
+} 
+
+.quick_menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 14px;
+    text-decoration: none;
+    font-size:25px;
+}
+
+
+.pagination {
+    display: inline-block;
+    
+    
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    width: 100px;
+}
+
+.pagination a.active {
+    background-color: rgb(96,96,96);
+    color: white;
+    border: 1px solid rgb(96,96,96);
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}
+.centre{
+    text-align: center;
+    
+   
+}
+
+
+.name_email input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+.name_email input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+
+.name_email label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+.name_email input[type=submit] {
+    background-color: rgb(68,68,68);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+.name_email input[type=submit]:hover {
+    background-color: rgb(96,96,96);
+}
+
+.name_email {
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 20px;
+    width: 400px;
+    
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.grid_popular_movies{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;    
+    justify-content: center;
+}
+
+.feedback { grid-area:feedback; }
+.support { grid-area:support; }
+.down_logo { grid-area:down_logo; }
+.quick_menu { grid-area:quick_menu ; } 
+
+.grid_footer{
+    display: grid;
+    grid-template-areas:
+      ' feedback feedback support support'
+      'down_logo quick_menu quick_menu quick_menu  ';
+    justify-content: center;
+    grid-gap: 15px 130px;
+    
+
+}
