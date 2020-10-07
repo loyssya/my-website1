@@ -13,7 +13,7 @@
       } 
 
       .grid_header ul { 
-          width: 0px !important;
+        width: 0px !important;
         height: 0 !important;
         overflow: hidden;
     }
@@ -164,10 +164,10 @@ height: 383px;
       .videoM {
     width: 100%;
 }
-.movie_block:nth-child(2) ~ .movie_block{
+.movie_blockM:nth-child(2) ~ .movie_blockM{
 display: none;
 }
-.movie_block img{
+.movie_blockM img{
     width: 168px;
     height: 240px;
 }
