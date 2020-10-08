@@ -78,7 +78,7 @@
     font-weight: bold;
 }
 
-ol{
+ ol{
     width:1025px;
     padding: 0;
 display: grid;
@@ -95,6 +95,7 @@ grid-template-areas:
     display: flex;
     flex-direction: column;
     justify-content: center;
+
 }
 .movie_imgF{
 display: flex;
@@ -147,9 +148,7 @@ align-items: center;
     text-decoration: none
 }
 
-.aboutF{
-    font-size: 30px;
-}
+
 .iconF{
     display: flex;
     justify-content: end;

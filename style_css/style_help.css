@@ -1,0 +1,150 @@
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: rgb(68,68,68);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.containerH {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 1000px;
+    margin-left: calc(23% - 10px);
+}
+
+.col-25H {
+    float: left;
+    width: 17%;
+    margin-top: 6px;
+}
+
+.col-75H {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.rowH:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.grid_bodyH{
+    display:flex ;
+    flex-direction: column;
+    align-items: center;}
+/* .searchH{
+        background: #C9C9CE;
+        padding: 15px 5px
+        
+    
+    }
+    
+    
+.searchH input {
+      
+      width: 750px;
+      height: 30px;
+      border-radius: 5px;
+      border: none;
+      
+      
+    }
+.searchH button{
+        width: 120px;
+        height: 50px;
+        border: none;
+        background:#C9C9CE;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        font-family: Verdana;
+        font-weight: bold;
+        
+    } */
+    .headerH{
+        display: flex;
+        justify-content: center;
+        
+    }
+    .headerH ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 15px 15px; 
+        overflow: hidden;
+        background-color: rgb(214,214,214);
+        width: 800px;
+        height: 60px; 
+        
+        
+    }
+    
+     .headerH li {
+        float: left;
+    }
+    
+     .headerH li a {
+        display: block;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 14px 14px;
+        text-decoration: none;
+        font-size:25px;
+        font-weight: bold;
+        
+    }
+    
+     .headerH li a:hover:not(.active) {
+        background-color: #ddd;
+    }
+    
+    .headerH li a.active {
+        color: #fff;
+        background-color: rgb(214,214,214);
+    }
+    .textH{
+        display:grid;
+        justify-content: center;
+        text-align: center;
+    }
+    .feedbackH{
+        display:grid;
+        justify-content: center;
+        text-align: center;
+    }
+    .feedbackH a{
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+    font-family: Helvetica;
+}

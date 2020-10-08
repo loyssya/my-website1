@@ -3,51 +3,79 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>LOOK_HELP</title>
+    <link rel="stylesheet" href="style_css/style_help.css">
+    <link rel="stylesheet" media="(max-width: 600px)" href="style_css/mob.css">
 </head>
 
-<body>
+<body class="grid_bodyF">
     <br>
     <br>
-    <div style="display: flex;">
-        <section style="width:30%; display:inline-block;" align="right">
-            <img width="130" height="60" src="./images/look.png" alt="logo">
-        </section>
-        <section style="width:70%; display:inline-block;">
-            <form>
-                <input type="text" placeholder="Искать здесь..." size="100">
-                <button type="submit">Поиск</button>
-            </form>
-        </section>
-    </div>
+    <header class="headerH">
+    <section class="logoH">
+        <img width="195" height="90" src="./images/look.png" alt="logo">
+    </section>
+    <section>
+        <nav>
+
+            <ul>
+                <li><a class="active" href="./HOME.html">Фильмы</a></li>
+                <li><a href="./TV_SERIES.html">Сериалы</a></li>
+                <li><a href="./CARTOON.html">Мультфильмы</a></li>
+                <li><a href="./ANIMATED_SERIES.html">Мультсериалы </a></li>
+
+            </ul>
+
+        </nav>
+    </section>
+</header>
 
     <br>
-    <section align="center">
+    <section class="textH" >
         <h2> У вас есть вопросы или предложения относительно нашего сайта? </h2>
         <p>Пожалуйста, заполните форму и мы ответим вам в ближайшее время.</p>
-        <form id="feedback">
-            <fieldset>
-                <lable for="email">E-mail:</lable>
-                <input type="email" required placeholder="mail@gmail.com" name="email" />
-            </fieldset>
-            <fieldset>
-                <lable for="name">Имя:</lable>
-                <input type="text" name="name" />
-            </fieldset>
-            <fieldset>
-                <lable for="Message">Message:</lable>
-                <input type="text" name="Message" size="100" />
-            </fieldset>
-        </form>
     </section>
-    <section style="width:50%; display:inline;" align="center">
+        <form class="containerH">
+            <div class="rowH">
+              <div class="col-25H">
+                <label for="fname">Имя</label>
+              </div>
+              <div class="col-75H">
+                <input type="text" id="fname" name="firstname" placeholder="Ваше имя..">
+              </div>
+            </div>
+            <div class="rowH">
+              <div class="col-25H">
+                <label for="lname">E-mail</label>
+              </div>
+              <div class="col-75H">
+                <input type="email" id="lname" name="lastname" placeholder="Ваш e-mail..">
+              </div>
+            </div>
+        
+            <div class="rowH">
+              <div class="col-25H">
+                <label for="subject">Сообщение</label>
+              </div>
+              <div class="col-75H">
+                <textarea id="subject" name="subject" placeholder="Введите ваше сообщение.." style="height:200px"></textarea>
+              </div>
+            </div>
+            <div class="rowH">
+              <input type="submit" value="Отправить">
+            </div>
+          </form>
+        
+    
+    <section class="feedbackH">
         <h3>Или вы можете связаться с нами написав нам на e-mail или позвонить по номеру:</h3>
-        <h1><a style="color:black; font-family:Helvetica"
-                href="mailto:elenamake02.20@gmail.com">elenamake02.20@gmail.com</a></h1>
-        <h1><a style="color:black; font-family:Helvetica" href="tel:+380508749156">380508749156</a></h1>
+        <h1><a href="mailto:elenamake02.20@gmail.com">elenamake02.20@gmail.com</a></h1>
+        <h1><a href="tel:+380508749156">380508749156</a></h1>
+        <h2 >Спасибо, что вы с нами! </h2>
     </section>
     <br>
-    <h2 align="center">Спасибо, что вы с нами! </h2>
+    
 
 
 </body>

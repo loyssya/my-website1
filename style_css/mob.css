@@ -148,8 +148,10 @@
       top: 130px;
   }
   .grid_movieM {
-      grid-template-columns: auto auto;
-      grid-gap: 0px; }
+   display: contents;
+  }
+
+
       .grid_popular_moviesM{
         grid-template-columns: auto auto;
         grid-gap:15px;
@@ -183,6 +185,190 @@ display: none;
 .movieM5{
     display: none;
 }
-  }
 
-  
+.headerF{
+    width: 100%;
+    justify-content: flex-start;
+}
+.headerF li{
+    float: unset;
+}
+.headerF nav::after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+    background-image: url(../images/Hamburger_icon.svg);
+    background-repeat: no-repeat;
+    right: 0;
+    top: 30px;
+}
+.headerF ul { 
+    width: 0px !important;
+  height: 0 !important;
+  overflow: hidden;
+  padding: 0px;
+  background-color: none;
+}
+
+.headerF nav:hover ul
+/* ,header nav:active ul */ {
+  height: auto !important;
+  width:  100vw !important;
+}
+
+.headerF nav:hover ul
+/* ,header nav:active ul*/ { 
+  position: absolute;
+  width: 100%;
+  left: 0;
+  background: #C9C9CE;
+  height: calc(100vh - 128px);
+  top: 130px;
+}
+.grid_favorites_movies{
+    width: 100%;
+}
+.about_movieF{
+    display: none;
+}
+.down_logoF{
+    display: none;
+}
+.movie_blockF{
+    width: 100%;
+}
+ol{
+ display: grid;
+ width: 100%;
+ grid-template-columns:70%;
+grid-template-areas:
+'movie_blockF  '
+'movie_blockF  '
+'movie_blockF ';
+}
+.headerA{
+    width: 100%;
+    display: block;
+}
+.headerA nav::after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+    background-image: url(../images/Hamburger_icon.svg);
+    background-repeat: no-repeat;
+    right: 0;
+    top: 30px;
+}
+.headerA ul { 
+    width: 0px !important;
+  height: 0 !important;
+  overflow: hidden;
+  padding: 0px;
+  background-color: none;
+}
+
+.headerA nav:hover ul
+/* ,header nav:active ul */ {
+  height: auto !important;
+  width:  100vw !important;
+}
+
+.headerA nav:hover ul
+/* ,header nav:active ul*/ { 
+  position: absolute;
+  width: 100%;
+  left: 0;
+  background: #C9C9CE;
+  height: calc(100vh - 128px);
+  top: 130px;
+}
+.about_usA p{
+   
+    width: 100%;
+}
+.mapA{
+    grid-template-columns: none;
+    grid-gap: 0px;
+}
+
+.aboutF{
+    font-size: 30px;
+    padding-left: calc(50% - 21px);
+}
+
+.mapA {
+    display: contents;
+
+  }
+.about_usA{
+    width: 100%;
+
+}
+.img_mapA img {
+    width: 312px;
+    height: 193px;
+}
+.we_mapA{
+    display: block;
+}
+
+.headerH{
+    width: 100%;
+    justify-content: flex-start;
+}
+.headerH li{
+    float: unset;
+}
+.headerH nav::after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+    background-image: url(../images/Hamburger_icon.svg);
+    background-repeat: no-repeat;
+    right: 0;
+    top: 30px;
+}
+.headerH ul { 
+    width: 0px !important;
+  height: 0 !important;
+  overflow: hidden;
+  padding: 0px;
+  background-color: none;
+}
+
+.headerH nav:hover ul
+/* ,header nav:active ul */ {
+  height: auto !important;
+  width:  100vw !important;
+}
+
+.headerH nav:hover ul
+/* ,header nav:active ul*/ { 
+  position: absolute;
+  width: 100%;
+  left: 0;
+  background: #C9C9CE;
+  height: calc(100vh - 128px);
+  top: 130px;
+}
+
+.containerH{
+    margin-left: 0%;
+width: 100%;
+}
+.feedbackH {
+    display: block;  
+}
+.feedbackH a{
+    font-size: 1em;
+}
+}
