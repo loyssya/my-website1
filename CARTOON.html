@@ -3,130 +3,363 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>LOOK_CARTOON</title>
+    
+    <link rel="stylesheet" href="style_css/style_homes.css">
+    <link rel="stylesheet" href="style_css/star.css">
+    <link rel="stylesheet" media="(max-width: 600px)" href="style_css/mob.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
     <br>
     <br>
-    <div style="display: flex;">
-        <section style="width:30%; display:inline-block;" align="right">
-            <img width="130" height="60" src="./images/look.png" alt="logo">
+
+    <header class="grid_header">
+        <section class="logo mob_logo">
+            <img width="195" height="90" src="./images/look.png" alt="logo">
         </section>
-        <section style="width:70%; display:inline-block;">
+        <section class="search mob_search">
             <form>
-                <input type="text" placeholder="Искать здесь..." size="100">
+                <input type="text" placeholder="Искать здесь..." />
                 <button type="submit">Поиск</button>
+                <!-- <i class="fa fa-heart" style="font-size:30px;color:gray;"></i> -->
             </form>
         </section>
-    </div>
-    <div style="display: flex;">
-        <section style="width:40%; display:inline-block; " align="center">
+
+        <section class="menu mob_menu">
             <nav>
                 <ul>
                     <li>
-                        <h1><a style="color:black" href="./HOME.html">Фильмы</a></h1>
+                        <h1><a class="item" href="./HOME.html">Фильмы</a></h1>
                     </li>
                     <li>
-                        <h1><a style="color:black" href="./TV_SERIES.html">Сериалы</a></h1>
+                        <h1><a  href="./TV_SERIES.html">Сериалы</a></h1>
                     </li>
                     <li>
-                        <h1><a style="color:black" href="./CARTOON.html">Мультфильмы</a></h1>
+                        <h1><a  href="./CARTOON.html">Мультфильмы</a></h1>
                     </li>
                     <li>
-                        <h1><a style="color:black" href="./ANIMATED_SERIES.html">Мультсериалы</a></h1>
+                        <h1><a  href="./ANIMATED_SERIES.html">Мультсериалы</a></h1>
                     </li>
                 </ul>
             </nav>
         </section>
-        <section style="width:50%; display: inline;">
-            <img width="660" height="355" src="./images/lionking1.jpg" alt="cinema">
+        <section class="image">
+            <img width="670" height="355" src="./images/lionking1.jpg" alt="cinema">
         </section>
-    </div>
-    <hr>
-    <h1 align="center">ПОПУЛЯРНЫЕ МУЛЬТФИЛЬМЫ ОНЛАЙН</h1>
-    <hr>
-    <section style="width:30%; display:inline-block;" align="center">
-        <img width="140" height="200" src="./images/Lion_king_ver2.jpg" alt="film">
-        <h3>Король лев</h3>
-        <h4><a href="./MOVIE.html">Смотреть</a></h4>
-    </section>
-    <section style="width:30%; display:inline-block;" align="center">
-        <img width="140" height="200" src="./images/Lion_king_ver2.jpg" alt="film">
-        <h3>Король лев</h3>
-        <h4><a href="./MOVIE.html">Смотреть</a></h4>
-    </section>
-    <section style="width:30%; display:inline-block;" align="center">
-        <img width="140" height="200" src="./images/Lion_king_ver2.jpg" alt="film">
-        <h3>Король лев</h3>
-        <h4><a href="./MOVIE.html">Смотреть</a></h4>
-    </section>
-    <section style="width:30%; display:inline-block;" align="center">
-        <img width="140" height="200" src="./images/Lion_king_ver2.jpg" alt="film">
-        <h3>Король лев</h3>
-        <h4><a href="./MOVIE.html">Смотреть</a></h4>
-    </section>
-    <section style="width:30%; display:inline-block;" align="center">
-        <img width="140" height="200" src="./images/Lion_king_ver2.jpg" alt="film">
-        <h3>Король лев</h3>
-        <h4><a href="./MOVIE.html">Смотреть</a></h4>
-    </section>
-    <section style="width:30%; display:inline-block;" align="center">
-        <img width="140" height="200" src="./images/Lion_king_ver2.jpg" alt="film">
-        <h3>Король лев</h3>
-        <h4><a href="./MOVIE.html">Смотреть</a></h4>
-    </section>
-    <section style="width:30%; display:inline-block;" align="center">
-        <img width="140" height="200" src="./images/Lion_king_ver2.jpg" alt="film">
-        <h3>Король лев</h3>
-        <h4><a href="./MOVIE.html">Смотреть</a></h4>
-    </section>
-    <section style="width:30%; display:inline-block;" align="center">
-        <img width="140" height="200" src="./images/Lion_king_ver2.jpg" alt="film">
-        <h3>Король лев</h3>
-        <h4><a href="./MOVIE.html">Смотреть</a></h4>
-    </section>
-    <section style="width:30%; display:inline-block;" align="center">
-        <img width="140" height="200" src="./images/Lion_king_ver2.jpg" alt="film">
-        <h3>Король лев</h3>
-        <h4><a href="./MOVIE.html">Смотреть</a></h4>
-    </section>
+    </header>
 
-    <div style="display: flex;">
-        <section style="width:50%; display:inline-block;" align="left ">
-            <h3>Обратная связь</h3>
-            <form id="feedback">
-                <fieldset>
-                    <lable for="email">E-mail:</lable>
-                    <input type="email" required placeholder="mail@gmail.com" name="email" />
-                </fieldset>
-                <fieldset>
-                    <lable for="name">Имя:</lable>
-                    <input type="text" name="name" />
-                </fieldset>
-            </form>
+    <article>
+        <h1>ПОПУЛЯРНЫЕ ФИЛЬМЫ</h1>
+    </article>
+
+    <section class="grid_popular_movies">
+        <section class="movie_block">
+            <img width="210" height="300" src="./images/Lion_king_ver2.jpg" alt="film">
+            <h3>Король Лев</h3>
+            <section>
+                <section class="star">
+                    <input type="radio" id="star-5" name="rating" value="5" disabled>
+                    <label for="star-5" title="Оценка «5»"></label>
+                    <input type="radio" id="star-4" name="rating" value="4" checked disabled>
+                    <label for="star-4" title="Оценка «4»"></label>
+                    <input type="radio" id="star-3" name="rating" value="3" disabled>
+                    <label for="star-3" title="Оценка «3»"></label>
+                    <input type="radio" id="star-2" name="rating" value="2" disabled>
+                    <label for="star-2" title="Оценка «2»"></label>
+                    <input type="radio" id="star-1" name="rating" value="1" disabledf>
+                    <label for="star-1" title="Оценка «1»"></label>
+                </section>
+                <span><a href="./MOVIE.html">Смотреть</a></span>
+            </section>
         </section>
-        <section style="width:50%; display:inline;" align="center">
-            <h3>Поддержка пользователей</h3>
-            <h1><a style="color:black; font-family:Helvetica"
-                    href="mailto:elenamake02.20@gmail.com">elenamake02.20@gmail.com</a></h1>
-            <h1><a style="color:black; font-family:Helvetica" href="tel:+380508749156">380508749156</a></h1>
+        <section class="movie_block">
+            <img width="210" height="300" src="./images/Lion_king_ver2.jpg" alt="film">
+            <h3>Король Лев</h3>
+            <section>
+                <section class="star">
+                    <input type="radio" id="star-5" name="rating1" value="5" checked disabled>
+                    <label for="star-5" title="Оценка «5»"></label>
+                    <input type="radio" id="star-4-1" name="rating1" value="4" disabled>
+                    <label for="star-4" title="Оценка «4»"></label>
+                    <input type="radio" id="star-3" name="rating1" value="3" disabled>
+                    <label for="star-3" title="Оценка «3»"></label>
+                    <input type="radio" id="star-2" name="rating1" value="2" disabled>
+                    <label for="star-2" title="Оценка «2»"></label>
+                    <input type="radio" id="star-1" name="rating1" value="1" disabled>
+                    <label for="star-1" title="Оценка «1»"></label>
+                </section>
+                <span><a href="./MOVIE.html">Смотреть</a></span>
+            </section>
         </section>
-    </div>
+        <section class="movie_block">
+            <img width="210" height="300" src="./images/Lion_king_ver2.jpg" alt="film">
+            <h3>Король Лев</h3>
+            <section>
+                <section class="star">
+                    <input type="radio" id="star-5" name="rating2" value="5" disabled>
+                    <label for="star-5" title="Оценка «5»"></label>
+                    <input type="radio" id="star-4" name="rating2" value="4" disabled>
+                    <label for="star-4" title="Оценка «4»"></label>
+                    <input type="radio" id="star-3" name="rating2" value="3" checked disabled>
+                    <label for="star-3" title="Оценка «3»"></label>
+                    <input type="radio" id="star-2" name="rating2" value="2" disabled>
+                    <label for="star-2" title="Оценка «2»"></label>
+                    <input type="radio" id="star-1" name="rating2" value="1" disabled>
+                    <label for="star-1" title="Оценка «1»"></label>
+                </section>
+                <span><a href="./MOVIE.html">Смотреть</a></span>
+            </section>
+        </section>
+        <section class="movie_block">
+            <img width="210" height="300" src="./images/Lion_king_ver2.jpg" alt="film">
+            <h3>Король Лев</h3>
+            <section>
+                <section class="star">
+                    <input type="radio" id="star-5" name="rating3" value="5" checked disabled>
+                    <label for="star-5" title="Оценка «5»"></label>
+                    <input type="radio" id="star-4" name="rating3" value="4" disabled>
+                    <label for="star-4" title="Оценка «4»"></label>
+                    <input type="radio" id="star-3" name="rating3" value="3" disabled>
+                    <label for="star-3" title="Оценка «3»"></label>
+                    <input type="radio" id="star-2" name="rating3" value="2" disabled>
+                    <label for="star-2" title="Оценка «2»"></label>
+                    <input type="radio" id="star-1" name="rating3" value="1" disabled>
+                    <label for="star-1" title="Оценка «1»"></label>
+                </section>
+                <span><a href="./MOVIE.html">Смотреть</a></span>
+            </section>
+        </section>
+
+        <section class="movie_block">
+            <img width="210" height="300" src="./images/Lion_king_ver2.jpg" alt="film">
+            <h3>Король Лев</h3>
+            <section>
+                <section class="star">
+                    <input type="radio" id="star-5" name="rating4" value="5" checked disabled>
+                    <label for="star-5" title="Оценка «5»"></label>
+                    <input type="radio" id="star-4" name="rating4" value="4" disabled>
+                    <label for="star-4" title="Оценка «4»"></label>
+                    <input type="radio" id="star-3" name="rating4" value="3" disabled>
+                    <label for="star-3" title="Оценка «3»"></label>
+                    <input type="radio" id="star-2" name="rating4" value="2" disabled>
+                    <label for="star-2" title="Оценка «2»"></label>
+                    <input type="radio" id="star-1" name="rating4" value="1" disabled>
+                    <label for="star-1" title="Оценка «1»"></label>
+                </section>
+                <span><a href="./MOVIE.html">Смотреть</a></span>
+            </section>
+        </section>
+        <section class="movie_block">
+            <img width="210" height="300" src="./images/Lion_king_ver2.jpg" alt="film">
+            <h3>Король Лев</h3>
+            <section>
+                <section class="star">
+                    <input type="radio" id="star-5" name="rating5" value="5" disabled>
+                    <label for="star-5" title="Оценка «5»"></label>
+                    <input type="radio" id="star-4" name="rating5" value="4" disabled>
+                    <label for="star-4" title="Оценка «4»"></label>
+                    <input type="radio" id="star-3" name="rating5" value="3" checked disabled>
+                    <label for="star-3" title="Оценка «3»"></label>
+                    <input type="radio" id="star-2" name="rating5" value="2" disabled>
+                    <label for="star-2" title="Оценка «2»"></label>
+                    <input type="radio" id="star-1" name="rating5" value="1" disabled>
+                    <label for="star-1" title="Оценка «1»"></label>
+                </section>
+                <span><a href="./MOVIE.html">Смотреть</a></span>
+            </section>
+        </section>
+        <section class="movie_block">
+            <img width="210" height="300" src="./images/Lion_king_ver2.jpg" alt="film">
+            <h3>Король Лев</h3>
+            <section>
+                <section class="star">
+                    <input type="radio" id="star-5" name="rating6" value="5" disabled>
+                    <label for="star-5" title="Оценка «5»"></label>
+                    <input type="radio" id="star-4" name="rating6" value="4" checked disabled>
+                    <label for="star-4" title="Оценка «4»"></label>
+                    <input type="radio" id="star-3" name="rating6" value="3" disabled>
+                    <label for="star-3" title="Оценка «3»"></label>
+                    <input type="radio" id="star-2" name="rating6" value="2" disabled>
+                    <label for="star-2" title="Оценка «2»"></label>
+                    <input type="radio" id="star-1" name="rating6" value="1" disabled>
+                    <label for="star-1" title="Оценка «1»"></label>
+                </section>
+                <span><a href="./MOVIE.html">Смотреть</a></span>
+            </section>
+        </section>
+        <section class="movie_block">
+            <img width="210" height="300" src="./images/Lion_king_ver2.jpg" alt="film">
+            <h3>Король Лев</h3>
+            <section>
+                <section class="star">
+                    <input type="radio" id="star-5" name="rating7" value="5" checked disabled>
+                    <label for="star-5" title="Оценка «5»"></label>
+                    <input type="radio" id="star-4" name="rating7" value="4" disabled>
+                    <label for="star-4" title="Оценка «4»"></label>
+                    <input type="radio" id="star-3" name="rating7" value="3" disabled>
+                    <label for="star-3" title="Оценка «3»"></label>
+                    <input type="radio" id="star-2" name="rating7" value="2" disabled>
+                    <label for="star-2" title="Оценка «2»"></label>
+                    <input type="radio" id="star-1" name="rating7" value="1" disabled>
+                    <label for="star-1" title="Оценка «1»"></label>
+                </section>
+                <span><a href="./MOVIE.html">Смотреть</a></span>
+            </section>
+        </section>
+
+        <section class="movie_block">
+            <img width="210" height="300" src="./images/Lion_king_ver2.jpg" alt="film">
+            <h3>Король Лев</h3>
+            <section>
+                <section class="star">
+                    <input type="radio" id="star-5" name="rating8" value="5" disabled>
+                    <label for="star-5" title="Оценка «5»"></label>
+                    <input type="radio" id="star-4" name="rating8" value="4" disabled>
+                    <label for="star-4" title="Оценка «4»"></label>
+                    <input type="radio" id="star-3" name="rating8" value="3" checked disabled>
+                    <label for="star-3" title="Оценка «3»"></label>
+                    <input type="radio" id="star-2" name="rating8" value="2" disabled>
+                    <label for="star-2" title="Оценка «2»"></label>
+                    <input type="radio" id="star-1" name="rating8" value="1" disabled>
+                    <label for="star-1" title="Оценка «1»"></label>
+                </section>
+                <span><a href="./MOVIE.html">Смотреть</a></span>
+            </section>
+        </section>
+        <section class="movie_block">
+            <img width="210" height="300" src="./images/Lion_king_ver2.jpg" alt="film">
+            <h3>Король Лев</h3>
+            <section>
+                <section class="star">
+                    <input type="radio" id="star-5" name="rating9" value="5" checked disabled>
+                    <label for="star-5" title="Оценка «5»"></label>
+                    <input type="radio" id="star-4" name="rating9" value="4" disabled>
+                    <label for="star-4" title="Оценка «4»"></label>
+                    <input type="radio" id="star-3" name="rating9" value="3" disabled>
+                    <label for="star-3" title="Оценка «3»"></label>
+                    <input type="radio" id="star-2" name="rating9" value="2" disabled>
+                    <label for="star-2" title="Оценка «2»"></label>
+                    <input type="radio" id="star-1" name="rating9" value="1" disabled>
+                    <label for="star-1" title="Оценка «1»"></label>
+                </section>
+                <span><a href="./MOVIE.html">Смотреть</a></span>
+            </section>
+        </section>
+        <section class="movie_block">
+            <img width="210" height="300" src="./images/Lion_king_ver2.jpg" alt="film">
+            <h3>Король Лев</h3>
+            <section>
+                <section class="star">
+                    <input type="radio" id="star-5" name="rating10" value="5" disabled>
+                    <label for="star-5" title="Оценка «5»"></label>
+                    <input type="radio" id="star-4" name="rating10" value="4" disabled>
+                    <label for="star-4" title="Оценка «4»"></label>
+                    <input type="radio" id="star-3" name="rating10" value="3" disabled>
+                    <label for="star-3" title="Оценка «3»"></label>
+                    <input type="radio" id="star-2" name="rating10" value="2" checked disabled>
+                    <label for="star-2" title="Оценка «2»"></label>
+                    <input type="radio" id="star-1" name="rating10" value="1" disabled>
+                    <label for="star-1" title="Оценка «1»"></label>
+                </section>
+                <span><a href="./MOVIE.html">Смотреть</a></span>
+            </section>
+        </section>
+        <section class="movie_block">
+            <img width="210" height="300" src="./images/Lion_king_ver2.jpg" alt="film">
+            <h3>Король Лев</h3>
+            <section>
+                <section class="star">
+                    <input type="radio" id="star-5" name="rating11" value="5" checked disabled>
+                    <label for="star-5" title="Оценка «5»"></label>
+                    <input type="radio" id="star-4" name="rating11" value="4" disabled>
+                    <label for="star-4" title="Оценка «4»"></label>
+                    <input type="radio" id="star-3" name="rating11" value="3" disabled>
+                    <label for="star-3" title="Оценка «3»"></label>
+                    <input type="radio" id="star-2" name="rating11" value="2" disabled>
+                    <label for="star-2" title="Оценка «2»"></label>
+                    <input type="radio" id="star-1" name="rating11" value="1" disabled>
+                    <label for="star-1" title="Оценка «1»"></label>
+                </section>
+                <span><a href="./MOVIE.html">Смотреть</a></span>
+            </section>
+        </section>
+    </section>
     <br>
-    <div style="display: flex;">
-        <section style="width:30%; display:inline-block;" align="left">
-            <img width="65" height="30" src="./images/look.png" alt="logo">
+    <section class="centre">
+        <div class="pagination">
+            <a href="./HOME.html">«</a>
+            <a href="./HOME.html" class="active">1</a>
+            <a href="./HOME.html">2</a>
+            <a href="./HOME.html">3</a>
+            <a href="./HOME.html">4</a>
+            <a href="./HOME.html">5</a>
+            <a href="./HOME.html">6</a>
+            <a href="./HOME.html" class="mob_hide7">7</a>
+            <a href="./HOME.html">8</a>
+            <a href="./HOME.html">9</a>
+            <a href="./HOME.html">»</a>
+            
+        </div>
+    </section>
+    <footer class="grid_footer">
+        <section class="feedback">
+            <h3>Обратная связь</h3>
+               <form class="name_email">
+
+                   <fieldset class="row">
+                       <div class="col-25">
+                           <i class="glyphicon glyphicon-user" style="font-size:36px;"></i>
+                       </div>
+                       <div class="col-75">
+                           <input type="text" id="fname" name="firstname" placeholder="Ваше имя..">
+                       </div>
+                   </fieldset>
+                   <fieldset class="row">
+                       <div class="col-25">
+                           <i class="glyphicon glyphicon-envelope" style="font-size:36px;"></i>
+                       </div>
+                       <div class="col-75">
+                           <input type="email" id="lname" name="lastname" placeholder="Ваш e-mail..">
+                       </div>
+                   </fieldset>
+                   <br>
+                   <fieldset class="row">
+                       <input type="submit" value="Отправить">
+                   </fieldset>
+               </form>
+           </section>
+        
+            <section class="support">
+                <h3>Поддержка пользователей</h3>
+                <h1><a style="color:black; font-family:Helvetica"
+                        href="mailto:elenamake02.20@gmail.com">elenamake02.20@gmail.com</a></h1>
+                <h1><a style="color:black; font-family:Helvetica" href="tel:+380508749156">380508749156</a></h1>
+            </section>
+            
+        
+
+        <br>
+
+        <section class="down_logo" >
+            <img width="130" height="65" src="./images/look.png" alt="logo">
         </section>
-        <section style="width:70%; display:inline-block;">
+            <section class="quick_menu">
             <nav>
-                <h3><a style="color:black" href="./ABOUT_US.html">О нас</a>
-                    <a style="color:black" href="./HELP.html">Помощь</a>
-                    <a style="color:black" href="./FAVORITES.html">Избранное</a></h3>
+                <ul>
+                    <li><a style="color:black" href="./ABOUT_US.html">О нас</a></li>
+                    <li><a style="color:black" href="./HELP.html">Помощь</a></li>
+                    <li><a style="color:black" href="./FAVORITES.html">Избранное</a></li>
+                </ul>
             </nav>
         </section>
-    </div>
+        
 
+    </footer>
 </body>
 
 </html>
