@@ -22,14 +22,12 @@
 
   }
 
-    .grid_header nav:hover ul
-    /* ,header nav:active ul */ {
+    .grid_header nav:hover ul {
         height: auto !important;
         width:  100vw !important;
     }
 
-    .grid_header nav:hover ul
-    /* ,header nav:active ul*/ { 
+    .grid_header nav:hover ul { 
         position: absolute;
         width: 100%;
         left: 0;
@@ -38,11 +36,6 @@
         top: 130px;
     }
 
-    /* header nav:hover::after, 
-    header nav:active::after {
-        width: 0;
-        height: 0;
-    } */
 
     .grid_header nav::after {
         content: "";
@@ -72,13 +65,6 @@
         justify-content: center;
         align-items: center;
     }
-    /* .feedback{
-        display: none;
-    }
-    
-    .quick_menu{
-        display: none; 
-}*/ 
 
 
     .centre{
@@ -132,14 +118,12 @@
       background-color: none;
   }
 
-  .headerM nav:hover ul
-  /* ,header nav:active ul */ {
+  .headerM nav:hover ul {
       height: auto !important;
       width:  100vw !important;
   }
 
-  .headerM nav:hover ul
-  /* ,header nav:active ul*/ { 
+  .headerM nav:hover ul{ 
       position: absolute;
       width: 100%;
       left: 0;
@@ -213,8 +197,7 @@ display: none;
   background-color: none;
 }
 
-.headerF nav:hover ul
-/* ,header nav:active ul */ {
+.headerF nav:hover ul{
   height: auto !important;
   width:  100vw !important;
 }
@@ -274,13 +257,13 @@ grid-template-areas:
 }
 
 .headerA nav:hover ul
-/* ,header nav:active ul */ {
+ {
   height: auto !important;
   width:  100vw !important;
 }
 
 .headerA nav:hover ul
-/* ,header nav:active ul*/ { 
+ { 
   position: absolute;
   width: 100%;
   left: 0;
@@ -346,13 +329,13 @@ grid-template-areas:
 }
 
 .headerH nav:hover ul
-/* ,header nav:active ul */ {
+ {
   height: auto !important;
   width:  100vw !important;
 }
 
 .headerH nav:hover ul
-/* ,header nav:active ul*/ { 
+ { 
   position: absolute;
   width: 100%;
   left: 0;

@@ -9,33 +9,7 @@
    
 } 
 
-/* .movieM1 { grid-area:logoM; }
-.movieM2 { grid-area:menuM; }
-.movieM3 { grid-area:imageM; }
-.movieM4 { grid-area:textM; }
-.movieM5 { grid-area:heartM; }
-.movieM6 { grid-area:aboutM; }
-.movieM7 { grid-area:videoM; }
-.movieM8 { grid-area:recomM; }
-.movieM9 { grid-area:recomM1; }
-.movieM10 { grid-area:recomM2; }
-.movieM11 { grid-area:recomM3; }
 
-
-
-.grid_body{
-    display: grid;
-    grid-template-areas:
-      'logoM logoM menuM menuM menuM menuM'
-      'imageM imageM textM textM heartM heartM'
-      'aboutM aboutM aboutM aboutM aboutM aboutM'
-      'videoM videoM videoM videoM videoM videoM'
-      'recomM recomM recomM recomM recomM recomM '
-      'recomM1 recomM1 recomM2 recomM2 recomM3 recomM3'; 
-
-    justify-content: center;
-
-} */
 
 .menuM{
     width: 855px;
@@ -93,9 +67,7 @@
 .aboutM{
     display:grid ;
     width: 1000px;
-    /* justify-content: center; */
-    /* margin-left: calc(50% - 500px); */
-    /* margin-right: calc(50% - 500px); */
+
 }
 
 .videoM{
@@ -103,8 +75,7 @@
     justify-content: center;
     width: 1000px;
     height: 360px;
-    /* margin-left: calc(50% - 500px); */
-    /* margin-right: calc(50% - 500px); */
+
 }
 .videoM video{
     width: 100%;
@@ -126,9 +97,7 @@
 }
 .recomM{
     display:grid ;
-    /* justify-content: center; */
-    /* margin-left: calc(50% - 500px); */
-    /* margin-right: calc(50% - 500px); */
+
 
 }
 .imagesM{
@@ -150,7 +119,7 @@
     background-color:#fff;
     width: 800px;
     height: 60px; 
-    /* padding-left: 150px;*/
+
 } 
     
 

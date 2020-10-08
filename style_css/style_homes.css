@@ -96,20 +96,12 @@ article{
 
 
     .feedback{
-    /* display: flex; */
-    /* justify-content:center; */
+
     color:black; 
     font-family:Helvetica;
     font-size:18px;         
 }
-/* .feedback section{
-    padding: 0px 50px; 
-} */
-/* .quick_menu{
-    display: flex;
-    justify-content: center; 
-    
-}*/
+
 a{
     text-decoration: none;
 }
