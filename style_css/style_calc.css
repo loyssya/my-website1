@@ -1,0 +1,69 @@
+
+.clac_number input {
+    width: 100px;
+    height: 50px;
+    border-radius: 13px;
+    margin: 3px;
+    font-size: 35px;
+    border: none;
+    color: white;
+    background-color: rgb(170, 170, 170);
+    overflow: hidden;
+    outline: none;
+    
+}
+.clac_number input[name="equal"]{
+    width: 210px;
+    color: white;
+    background-color: yellowgreen;
+}
+input[name="comma"],input[name="plus"],input[name="minus"], input[name="multi"], input[name="div"],
+ input[name="bracketRight"], input[name="bracketLeft"], input[name="delete"]
+{
+    color: white;
+    background-color: yellowgreen;
+}
+#calc {
+    display: grid;
+    justify-content: center;
+    
+}
+.result input{
+    width: 100%;
+    height: 3em;
+    border-radius: 5px;
+    text-align: right;
+    font-size: 34px;
+    border: none;
+}
+fieldset{
+    border: none;
+    background-color:rgb(230,230,230);
+}
+
+.button:hover{
+    background-color: #555;
+    color: white;
+}
+.clac_number input[name="equal"]:hover{
+    background-color: #555;
+    color: white;
+    outline: none;
+}
+
+@media (max-width: 500px) {
+
+.clac_number input {
+    width: 22%;
+    margin: 2px;
+}
+
+.clac_number input[name="equal"] {
+    width: 47%;
+
+}
+.line{
+    display: flex;
+    justify-content: center;
+}
+}
