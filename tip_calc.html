@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang=ru>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>TIP_CALC</title>
+    <link rel="stylesheet" href="style_css/style_tip_calc.css">
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+</head>
+<body class="tip" >
+    
+ 
+<form class="tip_calc">
+    <h1>Калькулятор  чаевых</h1>
+    <fieldset >
+
+        <span>Какая сумма вашего чека?</span>
+        <input type="text"  id="sum" name="sum" placeholder="Введите сумму вашего чека"> 
+    </fieldset>
+    <fieldset >
+        <span>Какой процент чаевых вы хотите оставить?</span>
+        <input type="text" id="percent" name="percent" placeholder="Введите %"> 
+    </fieldset>
+    <fieldset>
+        <span>Какое количество человек делит чек?</span>
+        <input type="text" id="numberP" name="numberP" placeholder="Введите количество человек"> 
+    </fieldset>
+    <!-- <input type="button" onclick="tip_calcFunction()" value="Расчитать!"> -->
+    <button type="button"  id="tip_calculate">Расчитать!</button>
+</form>
+
+
+<form class="result_calc">
+    
+    <fieldset >
+        <span>Сумма чаевых на одного человека:</span>
+        <input id="result_tip" type="text" name="result_tip">
+    </fieldset>
+
+<fieldset >
+    <span>Общая сумма:</span>
+    <input id="result_sum" type="text" name="result_sum">
+</fieldset>
+</form>
+
+</body>
+
+<script src="script/tip_calc.js"></script>
+
+</html>
