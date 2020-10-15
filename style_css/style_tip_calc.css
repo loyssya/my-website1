@@ -15,7 +15,9 @@ input[type="text"] {
     width: 100%;
     height: 30px;
     border-color: #E6E6E6;
-    border-radius: 10px;
+    font-size: 15px;
+    text-align: center;
+    font-weight: bold;
     outline: none;
 }
 span{
@@ -29,6 +31,9 @@ fieldset{
     
 
 }
+section{
+    display: flex;
+}
 
 #tip_calculate{
     text-transform: uppercase;
@@ -37,9 +42,9 @@ fieldset{
     margin: 3px auto;
     background: #2D8EA8;
     border-radius: 5px;
-    width: 190px;
-    height: 42px;
-    font-size: 17px;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
     color: white;
     border: none;
     outline: none;
@@ -50,7 +55,10 @@ fieldset{
     color: white;
 }
 
-
+.button{
+    width: 95px;
+    
+}
 
 
 h1{
