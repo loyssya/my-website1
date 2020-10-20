@@ -3,7 +3,7 @@ function tip_calcFunction() {
     var percent = $("#percent").val();
     var numberP = $("#numberP").val();
     sum = parseInt(sum, 10);
-
+    var all = sum * percent / 100;
     var total = (sum * percent / 100) / numberP;
 
     total = Math.round(total * 100) / 100;
@@ -11,18 +11,14 @@ function tip_calcFunction() {
     total = total.toFixed(2);
     total = parseFloat(total, 10);
 
-    var bill = sum + numberP * total;
+    var bill = sum + all;
     $("#result_sum").val(bill);
     $("#result_tip").val(total);
 
-
-
 }
 
-$("#tip_calculate").click(function () {
-    tip_calcFunction();
+document.getElementById("sum").onchange = tip_calcFunction ;
 
-});
 
 let buttonCountPlus = document.getElementById("buttonCountPlus");
 let buttonCountMinus = document.getElementById("buttonCountMinus");
@@ -38,6 +34,7 @@ buttonCountPlus.onclick = function() {
         count.value = currentValue + 1;
         
     }
+    tip_calcFunction()
 };
 
 buttonCountMinus.onclick = function() {
@@ -48,6 +45,7 @@ buttonCountMinus.onclick = function() {
     count.value = currentValue - 1;
        
     }
+    tip_calcFunction()
 }
 let buttonCountPlusCheck = document.getElementById("buttonCountPlusCheck");
 let buttonCountMinusCheck = document.getElementById("buttonCountMinusCheck");
@@ -62,16 +60,18 @@ buttonCountPlusCheck.onclick = function() {
         countCheck.value = currentValueCheck + 1;
         
     }
+    tip_calcFunction()
 };
 
 buttonCountMinusCheck.onclick = function() {
     currentValueCheck = countCheck.value;
     currentValueCheck = parseInt(currentValueCheck,10); 
-   if (currentValueCheck >= 2) {
+   if (currentValueCheck >= 1) {
        
     countCheck.value = currentValueCheck - 1;
        
     }
+    tip_calcFunction()
 }
 
 
