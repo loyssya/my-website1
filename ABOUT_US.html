@@ -7,6 +7,8 @@
     <title>LOOK_ABOUT_US</title>    
     <link rel="stylesheet" href="style_css/style_about_us.css">
     <link rel="stylesheet" media="(max-width: 600px)" href="style_css/mob.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     
 </head>
 
@@ -48,13 +50,20 @@
             <p>Город: Львов</p>
             <p>Улица: площадь Рынок</p>
             <p>Номер дома: 1</p>
+        <section id="location">
+            <span>Вы находитесь</span>
+            <br>
+            <span>Город: </span><span id="city"> </span>
+            <br>
+            <span>Температура: </span><span id="temp"> </span>
+        </section>
         </section>
         <section class="img_mapA">
             <h2>Карта</h2>
             <img src="./images/map.png" alt="map">
         </section>
     </section>
-
+    <script src="script/about_us.js"></script>
 </body>
 
 </html>

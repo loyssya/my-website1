@@ -66,3 +66,12 @@ li a.active {
          height: 289px;
         
      }
+     span{
+        font-size: 19px;        
+        color: white;
+        font-family: Helvetica;
+     }
+     #location{
+        background-color: #C9C9CE;
+        padding: 12px;
+     }
