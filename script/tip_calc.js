@@ -17,7 +17,7 @@ function tip_calcFunction() {
 
 }
 
-document.getElementById("sum").onchange = tip_calcFunction ;
+document.getElementById("sum").oninput = tip_calcFunction ;
 
 
 let buttonCountPlus = document.getElementById("buttonCountPlus");
